@@ -27,6 +27,7 @@ header {
     opacity: unset;
     width: 100%;
     /* border-bottom: 3px solid white; */
+    /* position: fixed; */
 }
 
 .navbar-container {
@@ -146,6 +147,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 350px 0px;
 }
 
 .section-two p {
@@ -224,7 +226,7 @@ main {
 }
 
 .slider img {
-    width: 100%;
+    width: 100%
 }
 
 
