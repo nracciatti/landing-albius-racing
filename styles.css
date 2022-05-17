@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #EB5757;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #000000, #EB5757);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #160000, #bb2323); /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+/**************** HEADER **************/
+header {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header-background {
+    background-color: rgba(0, 0, 0, .8);
+    opacity: unset;
+    width: 100%;
+    /* border-bottom: 3px solid white; */
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width: 95%;
+    margin: auto;
+    height: 100px;    
+}
+
+.navbar-logo {
+    width: 250px;
+}
+
+.navbar {
+    display: flex;
+    /* background-color: #ff001d; 
+    border-radius: 4px;
+    padding: 10px; */
+}
+
+.navbar-item {
+    margin: 0 2.5px;
+    padding: 10px;
+    list-style: none;
+    /* background-color: #ff001d; */
+    cursor: pointer;
+}
+
+.navbar-item a {
+    text-decoration: none;
+    color: white    ;
+    /* font-weight: 500px; */
+    font-size: 20px;
+}
+
+.navbar-item:hover a {
+    color: red;
+    transition: color .6s;
+}
+
+
+
+
+
+/* .navbar-button {
+    border: none;
+    background-color: #bb2323;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    /* animation: button-keyframe 2s infinite ;  
+    cursor: pointer;
+    width: 25vh;
+    margin-right: 15px;
+} */
+
+/* .navbar-button:hover {
+    background-color: rgb(248, 6, 6);
+    transition: color .6s;   
+} */
+
+/**************** MAIN **************/
+
+main {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+/**************** PRIMERA SECCIóN **************/
+
+.section-one-container { 
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-image: url("https://i.pinimg.com/originals/44/13/db/4413db979f336606a3a90926669a6c6e.jpg");
+    background-size: 100%;
+    border-bottom: 1px solid white;
+    overflow: hidden;
+}
+
+.section-one-txt {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: 35px 0 200px 300px;
+    gap: 10px;
+    font-weight: bold;
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+
+.section-one-txt h1 {
+    font-weight: bold;
+    color: #bb2323;
+}
+
+.section-one-txt p {
+    width: 80%;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+/**************** SEGUNDA SECCION **************/
+
+.section-two {
+    background: #EB5757;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #000000, #EB5757);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #160000, #bb2323); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: white; */
+    color: #fafafa;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-two p {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    padding: 100px 40px
+}
+
+
+.section-two p span {
+    font-weight: bold;
+    background: linear-gradient(to right, #750202, #bb2323);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.wsp-button {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 15px;
+    right: 15px;
+    background: green;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    cursor: pointer;
+}
+
+.wsp-icon {
+    color: white;  
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    margin-top: 6px;
+}
+
+.wsp-button:hover {
+    text-decoration: none;
+    background: #0df053;
+    color: rgb(226, 224, 224);
+    transition: .8s ;
+}
+
+/***************** TERCERA SECCION ***************/
+
+/* .section-three {
+    background: white;
+    color: black;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    padding: 30px 40px;
+}  */
+
+.slider {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: cambio 20s infinite;
+}
+
+.slider li {
+    list-style: none;
+    width: 100%;
+}
+
+.slider-img {
+    width: 100%;
+}
+
+
+
+@keyframes cambio {
+    0% { margin-left: 0 ;}
+    20% { margin-left: 0}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+
+}
+
+
+
+/* @keyframes button-keyframe {
+    from {
+        background: rgb(126, 4, 4);
+    }
+    
+    to {
+        background: rgb(248, 6, 6);
+    }
+}  */
+
