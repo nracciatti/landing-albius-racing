@@ -238,7 +238,7 @@ main {
 
 .why-us {
     text-align: center;
-    padding: 50px;
+    padding: 70px;
     border-bottom: 1px solid white;
     font-size: 25px;
 }
@@ -263,7 +263,7 @@ main {
     justify-content: center;
     font-weight: bolder;
     font-size: 25px;
-    padding: 50px;
+    padding: 70px;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
 }
@@ -271,15 +271,13 @@ main {
 .section-five {
     width: 100% ;
     display: flex;
-    margin: 50px auto;
+    margin: 85px auto;
     position: relative;
     max-width: 900px;
     gap: 40px;
 }
 
-.section-five-5{
- 
-}
+
 
 
 .section-five-img {
@@ -291,16 +289,14 @@ main {
 
 .overlay {
     position: absolute;
-    bottom: 0;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5);
+    bottom: -50px;
     color: #f1f1f1;
     width: 21.7%;
     transition: .5s ease;
     opacity:0;
-    color: white;
-    font-size: 20px;
-    padding: 20px;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 6px;
     text-align: center;
     border-radius: 20px;
 }
