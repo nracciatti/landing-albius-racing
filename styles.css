@@ -208,6 +208,15 @@ main {
     padding: 30px 40px;
 }  */
 
+.section-three h3{
+    position: absolute;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+
 /********* SLIDER ********/
 
 .slider {
