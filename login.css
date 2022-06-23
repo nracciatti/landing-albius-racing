@@ -78,3 +78,11 @@ body {
     text-decoration: underline;
     color: rgb(184, 14, 14);
 }
+
+
+@media screen and (max-width: 480px){
+    .login-form {
+        max-width: 362px;
+    }
+    
+}

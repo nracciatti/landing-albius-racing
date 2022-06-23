@@ -70,6 +70,11 @@ header {
     transition: color .6s;
 }
 
+.hamburguesa{
+    display: none;
+}
+
+
 
 
 
@@ -229,7 +234,7 @@ main {
     display: flex;
     padding: 0;
     width: 400%;
-
+    
     animation: cambio 20s infinite alternate-reverse;
 }
 
@@ -383,7 +388,7 @@ main {
 
 /* MEDIA QUERYS */
 
- @media screen and (max-width: 1024px ) {
+@media screen and (max-width: 1024px ) {
     .section-one-container{
         background-repeat: no-repeat;
         background-size: cover;
@@ -402,12 +407,55 @@ main {
     .beneficios h3{
         margin-bottom: 10px;
     }
-
+    
 } 
 
 
 
 @media screen and (max-width:800px){
+    .hamburguer-menu{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 58px;
+        height: 45px;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        background: linear-gradient(to right, #750202, #bb2323);
+    }
+    
+    .hamburguer-menu span {
+        width: 40px;
+        height: 4px;
+        background: #fafafa;
+    }
+    
+    .hamburguesa {
+        display: none;
+    }
+    
+    .navbar{
+        display: none;
+        text-align: center;
+        width: 150px;
+        margin: auto;
+        background: linear-gradient(to right, #750202, #bb2323);
+    }
+
+    .navbar-item {
+        list-style: none;
+        display: block;
+        padding: 10px 0;
+        color: #fafafa;
+    }
+
+    .hamburguesa:checked + .navbar {
+        display: block;
+    }
+
+
     .section-one-txt {
         width: 100%;
         display: flex;
@@ -424,7 +472,7 @@ main {
     }
     
     
-
+    
     .footer .footer-container {
         width: 85%;
         grid-template-columns: repeat(1, 1fr);
@@ -440,16 +488,13 @@ main {
 
 @media screen and (max-width:700px){
     .navbar {
-        display: none;
-        /* background-color: #ff001d; 
         border-radius: 4px;
-        padding: 10px; */
+        padding: 10px; 
     }
 
     .navbar-container {
         display: flex;
-        align-items: center;
-        justify-content:center;
+        justify-content:space-between;
         width: 95%;
         margin: auto;
         height: 100px;  
