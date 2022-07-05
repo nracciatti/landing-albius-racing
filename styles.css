@@ -290,7 +290,7 @@ main {
 }
 
 .section-five {
-    width: 100% ;
+    width: 75% ;
     display: flex;
     margin: 85px auto;
     position: relative;
@@ -435,6 +435,10 @@ main {
     .hamburguesa {
         display: none;
     }
+
+    .navbar-container {
+        justify-content: space-around;
+    }
     
     .navbar{
         display: none;
@@ -494,7 +498,7 @@ main {
 
     .navbar-container {
         display: flex;
-        justify-content:space-between;
+        justify-content:space-around;
         width: 95%;
         margin: auto;
         height: 100px;  
